@@ -9,7 +9,13 @@
  pins as below, and supply power to the board.
 
  CONNECTIONS:
- Ground: The ground of the wemos MUST be attached to the ground of the battery
+ 
+ Power: Should be powered separately from Baby Yoda's battery pack. Simplest solution
+ is to just plug the USB port on the Wemos D1 into a USB charger, which will supply
+ 5 volts. The ESP chip draws quite a bit of power, and since it can never go into
+ standby mode, it would draw the battery pack down quickly.
+
+ Ground: The ground of the Wemos D1 MUST be attached to the ground of the battery
  pack of yoda. This allows us to reliably activate the capacative touch sensor
  on the top of yoda's head.
 
